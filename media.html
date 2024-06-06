@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body{
+            height: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        span{
+            margin: 5px;
+        }
+
+        img{
+            width: 20%;
+            height: 150%;
+        }
+
+        .wda{
+            position: relative;
+        }
+
+        p,h3{
+            text-align: left;
+        }
+
+        h3{
+            /* position: relative; */
+            text-align: center;
+        }
+        @media (min-width: 1024px) {
+            p{
+                display: none;
+            }
+
+            img{
+                position: absolute;
+                
+                height: 150%;
+            }
+
+            #wda img{
+                top: 300%;
+                left: 43%;
+            }
+
+            h3{
+                position: absolute;
+                font-size: 20px;
+            }
+
+            .wda{
+                top: 460%;
+                left: 43%;
+                position: absolute;
+            }
+
+            #html img{
+                left: 0%;
+                top: 50%;
+            }
+
+            #html h3{
+                left: 8%;
+                top: 200%;
+            }
+
+            #html::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 180%;
+            left: 25%;
+            transform: rotate(120deg);
+            }
+
+            #css img{
+                left: 25%;
+                top: 10%;
+            }
+
+            #css h3{
+                left: 33%;
+                top: 160%;
+            }
+
+            #css::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 150%;
+            left: 43%;
+            transform: rotate(145deg);
+            }
+
+            #js img{
+                left: 10%;
+                top: 350%;
+            }
+
+            #js h3{
+                left: 17%;
+                top: 500%;
+            }
+
+            #js::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 50%;
+            background-color: rgb(167, 167, 167);
+            top: 370%;
+            left: 38%;
+            transform: rotate(80deg);
+            }
+
+            #jq img{
+                left: 25%;
+                top: 550%;
+            }
+
+            #jq h3{
+                left: 32%;
+                top: 710%;
+            }
+
+            #jq::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 450%;
+            left: 42%;
+            transform: rotate(35deg);
+            }
+
+            #vue img{
+                right: 5%;
+                top: 550%;
+            }
+
+            #vue h3{
+                right: 13%;
+                top: 720%;
+            }
+
+            #vue::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 450%;
+            right: 27%;
+            transform: rotate(300deg);
+            }
+
+            #sass img{
+                right: 5%;
+                top: 165%;
+            }
+
+            #sass h3{
+                right: 15%;
+                top: 320%;
+            }
+
+            #sass::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 30%;
+            background-color: rgb(167, 167, 167);
+            top: 300%;
+            right: 28%;
+            transform: rotate(245deg);
+            }
+
+            #bs img{
+                right: 20%;
+                top: 20%;
+            }
+
+            #bs h3{
+                right: 27%;
+                top: 160%;
+            }
+
+            #bs::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 50%;
+            background-color: rgb(167, 167, 167);
+            top: 180%;
+            right: 40%;
+            transform: rotate(230deg);
+            }
+
+            hr{
+                display: none;
+            }
+
+        }
+
+        /* @media (min-width: 992px) {
+            p{
+                display: none;
+            }
+
+            img{
+                position: absolute;
+                width: 20%;
+                height: 150%;
+            }
+
+            #wda img{
+                top: 300%;
+                left: 47.5%;
+            }
+
+            h3{
+                position: absolute;
+                font-size: 20px;
+            }
+
+            .wda{
+                top: 460%;
+                left: 45.5%;
+                position: absolute;
+            }
+
+            #html img{
+                left: 0%;
+                top: 50%;
+            }
+
+            #html h3{
+                left: 7.7%;
+                top: 200%;
+            }
+
+            #html::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 280%;
+            background-color: rgb(167, 167, 167);
+            top: 120%;
+            left: 30%;
+            transform: rotate(115deg);
+            }
+
+            #css img{
+                left: 25%;
+                top: 10%;
+            }
+
+            #css h3{
+                left: 29.2%;
+                top: 160%;
+            }
+
+            #css::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 150%;
+            left: 40%;
+            transform: rotate(150deg);
+            }
+
+            #js img{
+                left: 10%;
+                top: 350%;
+            }
+
+            #js h3{
+                left: 13%;
+                top: 500%;
+            }
+
+            #js::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 450px;
+            left: 450px;
+            transform: rotate(90deg);
+            }
+
+            #jq img{
+                left: 25%;
+                top: 550%;
+            }
+
+            #jq h3{
+                left: 28.5%;
+                top: 710%;
+            }
+
+            #jq::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 650px;
+            left: 700px;
+            transform: rotate(55deg);
+            }
+
+            #vue img{
+                right: 15%;
+                top: 500%;
+            }
+
+            #vue h3{
+                right: 18.7%;
+                top: 670%;
+            }
+
+            #vue::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 580px;
+            right: 560px;
+            transform: rotate(300deg);
+            }
+
+            #sass img{
+                right: 5%;
+                top: 150%;
+            }
+
+            #sass h3{
+                right: 9.5%;
+                top: 320%;
+            }
+
+            #sass::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 350px;
+            right: 380px;
+            transform: rotate(255deg);
+            }
+
+            #bs img{
+                right: 30%;
+                top: 20%;
+            }
+
+            #bs h3{
+                right: 32.8%;
+                top: 160%;
+            }
+
+            #bs::before{
+                content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: rgb(167, 167, 167);
+            top: 200px;
+            right: 750px;
+            transform: rotate(220deg);
+            }
+
+            hr{
+                display: none;
+            }
+
+        } */
+    </style>
+</head>
+<body>
+    <div id="wda">
+        <img src="./media/images/wda.png">
+        <div class="wda">
+        <h1>泰山職訓局</h1>
+        <h2>從零開始的網頁設計課程</h2>
+        <span>轉職網頁開發人員</span>
+       <span>掌握就業必備職能</span><br>
+       <span>由淺入深學習技能</span>
+       <span>強化職場的競爭力</span>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <div id="html">
+        <img src="./media/images/html.png">
+        <h3>Html</h3>
+        <p>超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）
+            是一種用於建立網頁的標準標記語言。HTML是一種基礎技術</p>
+    </div>
+    <br>
+    <hr>
+    <div id="css">
+        <img src="./media/images/css.png">
+        <h3>Css3</h3>
+        <p>階層式樣式表（英語：Cascading Style Sheets，縮寫：CSS；又稱串樣式列表、
+            級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）
+            添加樣式（字型、間距和顏色等）的電腦語言</p>
+    </div>
+    <br>
+    <hr>
+    <div id="js">
+        <img src="./media/images/js.png">
+        <h3>JavaScript</h3>
+        <p>JavaScript（通常縮寫為JS）是一門基於原型和頭等函式的多範式進階直譯程式語言</p>
+    </div>
+    <br>
+    <hr>
+    <div id="jq">
+        <img src="./media/images/jq.png">
+        <h3>jQuery</h3>
+        <p>jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。</p>
+    </div>
+    <br>
+    <hr>
+    <div id="vue">
+        <img src="./media/images/vue.png">
+        <h3>Vue.js</h3>
+        <p>Vue.js（/vjuː/，簡稱Vue）是一個用於建立使用者介面的開源MVVM前端JavaScript框架</p>
+    </div>
+    <br>
+    <hr>
+    <div id="sass">
+        <img src="./media/images/sass.png">
+        <h3>Sass</h3>
+        <p>Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計
+            並由Natalie Weizenbaum開發的層疊樣式表語言。</p>
+    </div>
+    <br>
+    <hr>
+    <div id="bs">
+        <img src="./media/images/bs.png">
+        <h3>Bootstrap</h3>
+        <p>Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，
+            指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架</p>
+    </div>
+</body>
+</html>
